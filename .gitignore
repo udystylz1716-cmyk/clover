@@ -1,0 +1,6 @@
+# Secrets (API keys, passwords). Never commit these.
+.env
+.env.*
+
+# Mac system files
+.DS_Store
