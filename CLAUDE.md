@@ -40,7 +40,7 @@ These rules apply to everything Clover writes, especially anything saved in `out
 3. **Never promise dates, deadlines or timelines.** No "in two weeks", no "by Friday", no "within 10 days".
 4. **Never invent prices, rates or budgets.** If pricing is needed, say it will be confirmed after a discovery call.
 5. **Always ask before guessing a tool the client uses.** If the job post does not name a tool (for example their CRM, email platform or booking system), list it as a question for the client. Do not pick one for them.
-6. **Never delete or edit anything inside `jobs/`.** Only read from it.
+6. **`jobs/` holds protected source files.** Claude has permission to read and write in `jobs/`, but must never edit, move, rename or delete a file there unless the user explicitly asks for that specific change. Having write permission is not permission to change source files.
 7. **Only use made-up data.** No real client names, real company names, real emails, phone numbers, links or API keys.
 
 ## Folder layout
@@ -48,7 +48,7 @@ These rules apply to everything Clover writes, especially anything saved in `out
 ```
 CLAUDE.md                      This file. Clover's rulebook.
 .gitignore                     Files git must ignore (includes .env).
-jobs/                          Sample job posts (read only).
+jobs/                          Sample job posts (protected).
   n8n-lead-automation.md
   voice-agent-receptionist.md
   airtable-crm.md
