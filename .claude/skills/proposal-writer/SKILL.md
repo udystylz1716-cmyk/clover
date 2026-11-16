@@ -62,8 +62,9 @@ Any tool they did not name MUST appear here as a question.
 Pricing will be confirmed after a short discovery call, once we have the
 answers above. Invite them to a call. Friendly sign-off.
 
+Best,
+
 [Your name]
-Clover
 ```
 
 ### Writing rules for this step
